@@ -66,6 +66,12 @@ def main():
     tunnel_0_0_0_0 = True
 
 
+    #Setting MTU
+
+    MTU = input("Enter the desired MTU: ")
+
+
+
     # Getting The Pesistance keep alive
     # setting the default value of 25
     # change it if needed
@@ -123,9 +129,11 @@ def main():
             f"Address = {IPnet_parts[0]}.{IPnet_parts[1]}.{IPnet_parts[2]}.{int(IPnet_parts[3])+1+i}/32\n" 
             
         if dns:
-            client_config += f"DNS = {dns}\n\n"
+            client_config += f"DNS = {dns}\n"
 
-        
+        if MTU:
+            client_config += f"MTU = {MTU}\n\n"
+
         if User_Pub_Key == "":
             client_config += f"[Peer]\n" \
                 f"PublicKey = {wg_pub_keys[0]}\n" 
@@ -143,7 +151,7 @@ def main():
 
         if(PerKeepAlive != 25):
 
-            client_config += f"PersistantKeepalive = {PerKeepAlive}\n"
+            client_config += f"PersistentKeepalive = {PerKeepAlive}\n"
 
 
         client_configs.append(client_config)

@@ -1,0 +1,5 @@
+interface wireguard peers add allowed-address=192.168.50.2/32 interface=WireGuard-Tunnel public-key="UgNNxwfHS+FDZ1yzs4W7K4NCJGiAKF3cQsauj+921yE="
+interface wireguard peers add allowed-address=192.168.50.3/32 interface=WireGuard-Tunnel public-key="vd9vYzxoU77SenQ7XN5GIgoVCg+BSNzzsYSu9kEtaXE="
+interface wireguard peers add allowed-address=192.168.50.4/32 interface=WireGuard-Tunnel public-key="NPMy/PQT4t/PLPBsWA45wSVKNWLV/7gklInl8PO1OF4="
+interface wireguard peers add allowed-address=192.168.50.5/32 interface=WireGuard-Tunnel public-key="lm3Fcc1LolVowNRsKzqm4C/AjN1tl257ETEUtdoe7AI="
+interface wireguard peers add allowed-address=192.168.50.6/32 interface=WireGuard-Tunnel public-key="jzjsuT3gF4cDkTVieUaoTsMQI1sHAi9LcirwWl3N+DM="
